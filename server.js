@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to the database
-mongoose.connect(process.env.MONGO_URI).then(() => console.log('Connected to the database'))
+mongoose.connect("mongodb+srv://BasavarajuVB:Basava0393@cluster0.jwk2q.mongodb.net/Todo-Management?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log('Connected to the database'))
   .catch((error) => console.error('Error connecting to the database:', error));
 
 // Import routes
